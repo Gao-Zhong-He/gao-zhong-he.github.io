@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <id>https://gao-zhong-he.github.io/</id>
+    <title>智慧百代</title>
+    <updated>2023-10-31T14:33:40.237Z</updated>
+    <generator>https://github.com/jpmonette/feed</generator>
+    <link rel="alternate" href="https://gao-zhong-he.github.io/"/>
+    <link rel="self" href="https://gao-zhong-he.github.io/atom.xml"/>
+    <subtitle>&lt;p&gt;致力于研究曾国藩和孟子的博客&lt;/p&gt;
+&lt;p&gt;缩小浏览器显示比例80%才能正常显示&lt;/p&gt;</subtitle>
+    <logo>https://gao-zhong-he.github.io/images/avatar.png</logo>
+    <icon>https://gao-zhong-he.github.io/favicon.ico</icon>
+    <rights>All rights reserved 2023, 智慧百代</rights>
+    <entry>
+        <title type="html"><![CDATA[曾国藩和刘传莹_Hellmut Wilhelm(魏德明)著]]></title>
+        <id>https://gao-zhong-he.github.io/post/ceng-guo-fan-he-liu-chuan-ying-_hellmut-wilhelmwei-de-ming-zhu/</id>
+        <link href="https://gao-zhong-he.github.io/post/ceng-guo-fan-he-liu-chuan-ying-_hellmut-wilhelmwei-de-ming-zhu/">
+        </link>
+        <updated>2023-10-31T13:33:20.000Z</updated>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[制心+孟子《牛山之木尝美矣》镜像篇]]></title>
+        <id>https://gao-zhong-he.github.io/post/zhi-xin-meng-zi-lesslessniu-shan-zhi-mu-chang-mei-yi-greatergreater-jing-xiang-pian/</id>
+        <link href="https://gao-zhong-he.github.io/post/zhi-xin-meng-zi-lesslessniu-shan-zhi-mu-chang-mei-yi-greatergreater-jing-xiang-pian/">
+        </link>
+        <updated>2023-10-30T13:03:47.000Z</updated>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[直升机型父母的教育惨案（李太后、张居正教育万历皇帝朱翊钧）]]></title>
+        <id>https://gao-zhong-he.github.io/post/zhi-sheng-ji-xing-fu-mu-de-jiao-yu-can-an-li-tai-hou-zhang-ju-zheng-jiao-yu-wan-li-huang-di-zhu-yi-jun/</id>
+        <link href="https://gao-zhong-he.github.io/post/zhi-sheng-ji-xing-fu-mu-de-jiao-yu-can-an-li-tai-hou-zhang-ju-zheng-jiao-yu-wan-li-huang-di-zhu-yi-jun/">
+        </link>
+        <updated>2023-10-29T14:46:20.000Z</updated>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[双亲庇护雏鸟联想人的“个体性”和“类群性”]]></title>
+        <id>https://gao-zhong-he.github.io/post/shuang-qin-bi-hu-chu-niao-lian-xiang-ren-de-ge-ti-xing-he-lei-qun-xing/</id>
+        <link href="https://gao-zhong-he.github.io/post/shuang-qin-bi-hu-chu-niao-lian-xiang-ren-de-ge-ti-xing-he-lei-qun-xing/">
+        </link>
+        <updated>2023-10-29T13:47:16.000Z</updated>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[辨析孟子“大人者，言不必信，行不必果，惟义所在”]]></title>
+        <id>https://gao-zhong-he.github.io/post/bian-xi-meng-zi-da-ren-zhe-yan-bu-bi-xin-xing-bu-bi-guo-wei-yi-suo-zai/</id>
+        <link href="https://gao-zhong-he.github.io/post/bian-xi-meng-zi-da-ren-zhe-yan-bu-bi-xin-xing-bu-bi-guo-wei-yi-suo-zai/">
+        </link>
+        <updated>2023-10-06T12:31:03.000Z</updated>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[孟子“好名之人，能让千乘之国；苟非其人，箪食豆羹见于色”“其人”指君子]]></title>
+        <id>https://gao-zhong-he.github.io/post/meng-zi-hao-ming-zhi-ren-neng-rang-qian-cheng-zhi-guo-gou-fei-qi-ren-dan-shi-dou-geng-jian-yu-se-qi-ren-zhi-jun-zi/</id>
+        <link href="https://gao-zhong-he.github.io/post/meng-zi-hao-ming-zhi-ren-neng-rang-qian-cheng-zhi-guo-gou-fei-qi-ren-dan-shi-dou-geng-jian-yu-se-qi-ren-zhi-jun-zi/">
+        </link>
+        <updated>2023-10-06T02:24:14.000Z</updated>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[孟子“仕非为贫也”章“为”是“致力于”而非“因为”]]></title>
+        <id>https://gao-zhong-he.github.io/post/meng-zi-shi-fei-wei-pin-ye-zhang-wei-shi-zhi-li-yu-er-fei-yin-wei/</id>
+        <link href="https://gao-zhong-he.github.io/post/meng-zi-shi-fei-wei-pin-ye-zhang-wei-shi-zhi-li-yu-er-fei-yin-wei/">
+        </link>
+        <updated>2023-10-02T03:10:44.000Z</updated>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[探讨孟子“不耻不若人，何若人有？”章“若人”意为“像人”而不是“比不上人”]]></title>
+        <id>https://gao-zhong-he.github.io/post/tan-tao-meng-zi-bu-chi-bu-ruo-ren-he-ruo-ren-you-zhang-ruo-ren-yi-wei-xiang-ren-er-bu-shi-bi-bu-shang-ren/</id>
+        <link href="https://gao-zhong-he.github.io/post/tan-tao-meng-zi-bu-chi-bu-ruo-ren-he-ruo-ren-you-zhang-ruo-ren-yi-wei-xiang-ren-er-bu-shi-bi-bu-shang-ren/">
+        </link>
+        <updated>2023-10-01T14:56:58.000Z</updated>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[孟子•梁惠王“为巨室”章中不胜其任的主语应当是“巨木”而非“工师”、“匠人”]]></title>
+        <id>https://gao-zhong-he.github.io/post/meng-zi-liang-hui-wang-wei-ju-shi-zhang-zhong-bu-sheng-qi-ren-de-zhu-yu-ying-dang-shi-ju-mu-er-fei-gong-shi-jiang-ren/</id>
+        <link href="https://gao-zhong-he.github.io/post/meng-zi-liang-hui-wang-wei-ju-shi-zhang-zhong-bu-sheng-qi-ren-de-zhu-yu-ying-dang-shi-ju-mu-er-fei-gong-shi-jiang-ren/">
+        </link>
+        <updated>2023-10-01T14:46:50.000Z</updated>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[辨析孟子“民为贵”隐含的主张是天子如果危丘民则可被废除]]></title>
+        <id>https://gao-zhong-he.github.io/post/bian-xi-meng-zi-min-wei-gui-yin-han-de-zhu-zhang-shi-tian-zi-ru-guo-wei-qiu-min-ze-ke-bei-fei-chu/</id>
+        <link href="https://gao-zhong-he.github.io/post/bian-xi-meng-zi-min-wei-gui-yin-han-de-zhu-zhang-shi-tian-zi-ru-guo-wei-qiu-min-ze-ke-bei-fei-chu/">
+        </link>
+        <updated>2023-09-02T14:20:12.000Z</updated>
+    </entry>
+</feed>

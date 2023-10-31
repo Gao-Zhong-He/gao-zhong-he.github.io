@@ -1,0 +1,1453 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta name="description" content="作者简介
+&emsp;&emsp;卫德明（Hellmut Wilhelm）是德国汉学家卫礼贤（Richard Wilhelm）之子，出生于中国青岛，后在北京大学教德语，一直主持北京的德中学会工作。 1948 年赴美国，任华盛顿州立大学东方学..." />
+    <meta name="keywords" content="刘传莹,汉学,Hellmut Wilhelm,曾国藩,魏德明" />
+    <link rel="stylesheet" href="https://gao-zhong-he.github.io//media/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://gao-zhong-he.github.io//styles/main.css">
+    <!-- 代码渲染风格css -->
+    
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.18.1/build/styles/default.min.css">
+    
+    <!-- 代码高亮插件 -->
+    <script src="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.18.1/build/highlight.min.js"></script>
+    <!-- 代码复制插件 -->
+    <script src="https://cdn.jsdelivr.net/gh/850552586/ericamcdn@0.1/js/clipboard.min.js"></script>
+    <!-- live2d插件 -->
+    <link rel="stylesheet" href="https://gao-zhong-he.github.io//media/css/live2d.css">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js"></script>
+    <!-- 最新版本的 Bootstrap 核心 CSS 文件 -->
+    <link href="https://cdn.bootcdn.net/ajax/libs/font-awesome/5.13.1/css/all.min.css" rel="stylesheet">
+    <!-- 数学公式 -->
+    
+    <title>曾国藩和刘传莹_Hellmut Wilhelm(魏德明)著</title>
+
+    <!-- 大纲索引css调整 -->
+    
+    <style>
+        .markdownIt-TOC {
+            padding-left: 2px;
+            width: 100%;
+        }
+
+        .markdownIt-TOC li {
+            padding-left: 2%;
+        }
+    </style>
+    
+</head>
+
+<body>
+    <div id="landlord">
+        <div class="message" style="opacity:0"></div>
+        <canvas id="live2d" width="240" height="250" class="live2d"></canvas>
+    </div>
+    <div id="domainname" style="display:none">https://gao-zhong-he.github.io/</div>
+    <div id="content">
+        <div>
+            <!----------- 移动端导航栏👇 ----------------->
+            <div id="bar">
+                <style>
+  .navmobile {
+    z-index: 15;
+    max-height: 40vh;
+    overflow-y: scroll;
+    overflow-x: hidden;
+  }
+
+  @media screen and (max-width: 1200px) {
+    .navbar {
+      max-width: 100vw;
+    }
+  }
+
+  @media screen and (max-width:1200px) and (min-width: 768px) {
+    @media (min-width: 768px) {
+      .navbar-nav {
+        float: right;
+        margin: 0;
+      }
+    }
+  }
+
+  @media screen and (max-width:768px) {
+    .mbapspan {
+      padding: 0;
+    }
+  }
+</style>
+<div class="pjaxloading"  onclick="pjaxloadingClose()">
+  <div class="loadingbackground"></div>
+  <div id="loading">
+    <div class="loading">
+    </div>
+  </div>
+</div>
+<nav class="navbar navbar-inverse navbar-fixed-top navmobile">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#barmenu"
+        aria-expanded="false" id="barbutton">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a data-pjax class="navbar-brand" style="color:white" href="https://gao-zhong-he.github.io/">智慧百代&nbsp;&nbsp;|</a>
+      <span class="navbar-brand mbapspan"><i id="mbaplayer" class="fa fa-play-circle-o" aria-hidden="true"
+          style="font-size: 28px;top: 12px;position: absolute;" onclick="aplayerPlay();"></i></span>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="barmenu">
+      <ul class="nav navbar-nav">
+        
+        
+        <li>
+          <a data-pjax href="/" style="color:white">
+            首页
+          </a>
+        </li>
+        
+        
+        
+        <li>
+          <a data-pjax href="/archives" style="color:white">
+            归档
+          </a>
+        </li>
+        
+        
+        
+        <li>
+          <a data-pjax href="/tags" style="color:white">
+            标签
+          </a>
+        </li>
+        
+        
+        
+        <li>
+          <a data-pjax href="/post/about" style="color:white">
+            关于
+          </a>
+        </li>
+        
+        
+        
+        
+          
+        </ul>
+      </div><!-- /.navbar-collapse -->
+    </div><!-- /.container-fluid -->
+  </nav>
+
+
+  <!-- 引入jQuery核心js文件 -->
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js"></script>
+  <script>
+    let btstate = false;
+    var bt = $("#barbutton");
+    var bm = $("#barmenu");
+    bt.click(function () {
+      dropdown();
+    })
+    function dropdown() {
+      console.log(btstate);
+      //下拉
+      if (btstate == false) {
+        bt.removeClass("collapsed");
+        bt.attr("aria-expanded", "true");
+        bm.attr("aria-expanded", "true")
+        bm.fadeIn(700);
+        btstate = true;
+      }
+      else {
+        bt.addClass("collapsed");
+        bt.attr("aria-expanded", "false");
+        bm.removeClass("in");
+        bm.hide();
+        bm.attr("aria-expanded", "false");
+        btstate = false;
+      }
+    }
+  </script> 
+            </div>
+            <!----------- 移动端导航栏👆 ----------------->
+
+            <!--------------- pc端菜单栏👇 ---------------->
+            <div class="side"><head>
+    <link rel="stylesheet" href="https://gao-zhong-he.github.io//media/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://gao-zhong-he.github.io//styles/main.css">
+    
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.18.1/build/styles/default.min.css">
+    
+    <script src="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.18.1/build/highlight.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/850552586/ericamcdn@0.1/js/clipboard.min.js"></script>
+    <link rel="stylesheet" href="https://gao-zhong-he.github.io//media/css/live2d.css">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
+    <!-- 最新版本的 Bootstrap 核心 CSS 文件 -->
+    <link href="https://cdn.bootcdn.net/ajax/libs/font-awesome/5.13.1/css/all.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <!-- fancybox -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+    <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+
+
+    <!--------- 数学公式👇---- -->
+    
+    <!--------- 数学公式👆----------------- -->
+    <!--------- daovocie功能👇 ------------------->
+    
+    <!--------- daovocie功能👆 ------------------->
+    <!-- -----------------twikoo评论系统引入👇 --------->
+    <script src="https://cdn.jsdelivr.net/npm/twikoo@1.3.1/dist/twikoo.all.min.js"></script>
+    <!-- -----------------twikoo评论系统引入👆 --------->
+    <!---------------- leancloud api 功能依赖引入👇 -------->
+    <script src="https://cdn.jsdelivr.net/npm/leancloud-storage@3.13.0/dist/av-min.js"></script>
+    <!---------------- leancloud api 功能依赖引入👆 -------->
+    <!------------------ valine评论系统引入👇 ------------------>
+    <script src="https://gao-zhong-he.github.io//media/js/valine.min.js"></script>
+    <!------------------ valine评论系统引入👆 ------------------>
+    <!---------------- 今日诗词api功能依赖👇 ----------------------->
+    <script src="https://sdk.jinrishici.com/v2/browser/jinrishici.js" charset="utf-8"></script>
+    <!---------------- 今日诗词api功能依赖👆 ----------------------->
+    <!---------------- 今日诗词api功能依赖👇 ----------------------->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/ispeak-bber/ispeak-bber.min.js" charset="utf-8"></script>
+    <!---------------- 哔哔功能依赖👆 ----------------------->
+
+
+</head>
+
+<style>
+    body {
+        overflow-x: hidden;
+        height: 100vh;
+        overflow-y: scroll;
+        cursor: url("https://gao-zhong-he.github.io//media/images/mouse_cursor.png"), auto
+    }
+</style>
+
+<body>
+    <!--=------ 页面加载动态画面👇 --------------->
+    <div class="pjaxloading" onclick="pjaxloadingClose()">
+        <div class="loadingbackground"></div>
+        <div id="loading-aname">
+            <div class="loading-aname">
+            </div>
+        </div>
+    </div>
+    <!--=------ 页面加载动态画面👆 --------------->
+
+    <!--------------- 左侧菜单栏👇 ------------------------>
+    
+    <!--------------- 左侧菜单栏👆 ------------------------>
+
+    <!----------------- 顶部菜单栏👇 ------------------------>
+    
+    <div>
+        <nav class="navbar navbar-inverse navbar-fixed-top navbartop">
+            <div class="container-fluid">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+                    <a data-pjax class="navbar-brand" href="https://gao-zhong-he.github.io/"
+                        style="font-size:21px">智慧百代&nbsp;&nbsp;|&nbsp;&nbsp;</a>
+                    <a class="navbar-brand topdescription" href=""
+                        style="font-size:15px;font-family:kaiti"><p>致力于研究曾国藩和孟子的博客</p>
+<p>缩小浏览器显示比例80%才能正常显示</p></a>
+                </div>
+
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse">
+                    
+                    <div class="search nav navbar-nav" style="margin-top:8px">
+                        <!-- <input type="text" class="search-input" placeholder="标题搜索(●'◡'●)" /> -->
+                        <input type="text" class="search-input"
+                            placeholder="标题搜索 ⚆_⚆浏览器缩小显示比例网页才能正常">
+                        <div class="search-results"></div>
+                    </div>
+                    
+                <div class="search nav navbar-nav searchtop">
+                <a title="社交信息" onclick="document.getElementById('socialMenu').style.display='block'" class="topshare-button"><i><img class="social"
+                    src="https://gao-zhong-he.github.io//media/images/social.png"></i></a>
+                    <a onclick="showAaplayer()"><i style="font-size: 20px;"><img
+                                src='https://gao-zhong-he.github.io//media/images/music.png' alt="音乐播放器"
+                                class="musicbtn musictop"></i></a>
+                </div>
+                <ul class="nav navbar-nav" style="float: right;margin-right:5%">
+                    
+                    
+                    <li>
+                        <a data-pjax href="/"  class="menutopbutton">
+                            <i style="font-size: 40px;"><img class="icon menuicon" src="" alt="首页"></i>
+                            首页
+                        </a>
+                    </li>
+                    
+                    
+                    
+                    <li>
+                        <a data-pjax href="/archives"  class="menutopbutton">
+                            <i style="font-size: 40px;"><img class="icon menuicon" src="" alt="归档"></i>
+                            归档
+                        </a>
+                    </li>
+                    
+                    
+                    
+                    <li>
+                        <a data-pjax href="/tags"  class="menutopbutton">
+                            <i style="font-size: 40px;"><img class="icon menuicon" src="" alt="标签"></i>
+                            标签
+                        </a>
+                    </li>
+                    
+                    
+                    
+                    <li>
+                        <a data-pjax href="/post/about"  class="menutopbutton">
+                            <i style="font-size: 40px;"><img class="icon menuicon" src="" alt="关于"></i>
+                            关于
+                        </a>
+                    </li>
+                    
+                    
+                    
+                    
+                    
+                    <!--  -->
+                  <li><img src="https://gao-zhong-he.github.io//images/avatar.png?v=1698762813002" alt=""
+                    class="menutopavatar"></li>
+                </ul>
+            </div><!-- /.navbar-collapse -->
+    </div><!-- /.container-fluid -->
+    </nav>
+    <div id="socialMenu">
+        <div class="animate">
+            <div class="socialContainer">
+                
+                
+                
+                
+                
+                
+                
+                
+            </div>
+            <div id="qq" style="display:none"></div>
+        </div>
+    </div>
+    <img class="moon" src="https://gao-zhong-he.github.io//media/images/moon.png" onclick="moonlight()">
+    <script>
+        var social = document.getElementById('socialMenu');
+        var fancybox = document.getElementsByClassName('fancybox-stage');
+        // 鼠标点击模型外区域关闭登录框
+        window.onclick = function (event) {
+            if (event.target == social) {
+                social.style.display = "none";
+            }
+        }
+    </script>
+    </div>
+    
+    <!----------------- 顶部菜单栏👆 ------------------------>
+
+<!--核心功能加载-->
+<script src="https://gao-zhong-he.github.io//media/js/mainfunc.js"></script>
+
+<!------------- Fog1.0版本彩蛋👇 -------------->
+    <!-- <section id="terrestrial" class="popup">
+        <a href="#" class="back">&lt; back</a>
+    </section>
+
+    <div class="flycontainer">
+        <div class="flyword">御风飞行中...</div>
+    </div>
+
+    <script>
+        $("#fog_go").click(function(){fog_go()});
+        async function fog_go(){
+            $(".bars").hide()
+            $("#live2d").hide()
+            await sleep(3000);
+            $(".flycontainer").css("display","flex");
+            $(".popup").fadeOut(500)
+            await sleep(2000);
+            var sitename = "智慧百代";
+            getFogUser(sitename);
+        }
+
+        function fog_goregis(){
+            var sitename = "智慧百代";
+            var siteurl = "https://gao-zhong-he.github.io/";
+            regisFogUser(sitename,siteurl);
+        }
+        fog_goregis();
+    </script> -->
+<!------------- Fog1.0版本彩蛋👆 -------------->
+<script>
+    function change_topmenu(){
+        tmcolor = "#343a40"
+        tsnamecolor = "#495057"
+        $(".navbar-inverse .navbar-nav>li>a").css("color",tmcolor)
+        $(".navbar-inverse .navbar-brand").css("color",tsnamecolor)
+        $(".navbar-fixed-top").css("border-radius","0 0 10px 10px")
+    }
+</script>
+
+<!------ 根据自定义配置声明变量👇 --------------------->
+    
+    <script>
+        var postnumChoice = true
+    </script>
+    
+    
+    <script>
+        var shareChoice = false
+    </script>
+    
+    
+    <script>
+        var donateChoice = false
+    </script>
+    
+    
+    <script>
+        var searchChoice = true
+    </script>
+    
+    <script>let postsnum = 0;</script>
+    <div id="side-posttitle" style="display: none;">
+    
+    
+    曾国藩和刘传莹_Hellmut Wilhelm(魏德明)著
+    <script>
+        postsnum += 1
+    </script>
+    
+    
+    
+    制心+孟子《牛山之木尝美矣》镜像篇
+    <script>
+        postsnum += 1
+    </script>
+    
+    
+    
+    直升机型父母的教育惨案（李太后、张居正教育万历皇帝朱翊钧）
+    <script>
+        postsnum += 1
+    </script>
+    
+    
+    
+    双亲庇护雏鸟联想人的“个体性”和“类群性”
+    <script>
+        postsnum += 1
+    </script>
+    
+    
+    
+    辨析孟子“大人者，言不必信，行不必果，惟义所在”
+    <script>
+        postsnum += 1
+    </script>
+    
+    
+    
+    孟子“好名之人，能让千乘之国；苟非其人，箪食豆羹见于色”“其人”指君子
+    <script>
+        postsnum += 1
+    </script>
+    
+    
+    
+    孟子“仕非为贫也”章“为”是“致力于”而非“因为”
+    <script>
+        postsnum += 1
+    </script>
+    
+    
+    
+    探讨孟子“不耻不若人，何若人有？”章“若人”意为“像人”而不是“比不上人”
+    <script>
+        postsnum += 1
+    </script>
+    
+    
+    
+    孟子•梁惠王“为巨室”章中不胜其任的主语应当是“巨木”而非“工师”、“匠人”
+    <script>
+        postsnum += 1
+    </script>
+    
+    
+    
+    辨析孟子“民为贵”隐含的主张是天子如果危丘民则可被废除
+    <script>
+        postsnum += 1
+    </script>
+    
+    
+    
+    辨析孟子“五谷者，种之美者也”主旨是强调环境对人的影响+镜像篇
+    <script>
+        postsnum += 1
+    </script>
+    
+    
+    
+    辨析孟子“致为臣而归”他为什么要拒绝齐王“独尊孟术”的请求
+    <script>
+        postsnum += 1
+    </script>
+    
+    
+    
+    探讨朱熹解释孟子“圣人，百世之师也”章“亲炙”为“亲近而熏炙之也”_高中和原创
+    <script>
+        postsnum += 1
+    </script>
+    
+    
+    
+    大学诚意章“自慊”应解为“自我的欠缺”_高中和原创
+    <script>
+        postsnum += 1
+    </script>
+    
+    
+    
+    “空乏其身，行拂乱其所为”中行字应当断在前一句+高中和原创
+    <script>
+        postsnum += 1
+    </script>
+    
+    
+    
+    探讨朱熹解释孟子“自反而不缩”的错误_高中和原创
+    <script>
+        postsnum += 1
+    </script>
+    
+    
+    
+    在“中学为体，西学为用”的矛盾中儒家尝试与西方融合_HellmutWilhelm著
+    <script>
+        postsnum += 1
+    </script>
+    
+    
+    
+    钢琴调律第二次调律心得
+    <script>
+        postsnum += 1
+    </script>
+    
+    
+    
+    钢琴调律DIY之处女篇新买琴三个月绝不需要免费调律,别贪送的那次!
+    <script>
+        postsnum += 1
+    </script>
+    
+    
+    
+    钢琴调律DIY使用Tunelab钢琴调律傻瓜教程
+    <script>
+        postsnum += 1
+    </script>
+    
+    
+    
+    从新浪将博客迁移到GitHub第一贴，纪念！
+    <script>
+        postsnum += 1
+    </script>
+    
+    
+    
+    
+    
+    
+    </div>
+    
+        <script>
+            change_topmenu()
+            var menupos = 'top'
+            $(".topdescription").css("color","#495057")
+        </script>
+        
+    <script>
+        let commentsHide = false
+    </script>
+    <!------ 根据自定义配置声明变量👆 --------------------->
+
+
+    <!----------根据自定义配置设置图标信息👇---------->
+    <script>
+        var icondict = new Array();
+    </script>
+    
+        
+    
+    <!----------根据自定义配置设置图标信息👆---------->
+</body>
+
+<script src="https://gao-zhong-he.github.io//media/share/dist/Share.js"></script>
+<!-- 页面pjax测试 -->
+<script src="https://cdn.bootcdn.net/ajax/libs/jquery.pjax/2.0.1/jquery.pjax.js"></script>
+<!--确保jQuery已经在此之前加载-->
+<!-- <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script> -->
+<script src="https://gao-zhong-he.github.io//media/js/all-pjax.js"></script>
+<script>
+    //-------------------------------说说功能👇--------------------------------------
+    let talksall = [];
+    let talks = [];
+    let talkindex = 0;
+    get();
+
+    function get() {
+        var t = JSON.parse('[]');
+        talkindex = t.length - 1;
+        for (var i = 0; i <= t.length - 1; i++) {
+            var d = {};
+            d["time"] = t[i].time;
+            d["author"] = t[i].author;
+            d["text"] = t[i].text;
+            d["img"] = t[i].img;
+            talksall.push(d);
+        }
+    }
+
+    function add() {
+        for (var i = talkindex; i >= 0 && i > talkindex - 3; i--) {
+            talks.push(talksall[i]);
+        }
+        talkindex = (talkindex - 3) >= 0 ? (talkindex - 3) : -1;
+        if (talkindex < 0) $("#getmorebt").hide();
+        show();
+    }
+
+    function show() {
+        var talkT = document.getElementById("talkContainer");
+        talkT.innerHTML = "";
+        for (var i = 0; i < talks.length; i++) {
+            if (talks[i].img != '') {
+                talkT.innerHTML += '\
+            <div class="talk" v-for="t in talks"> \
+                <span data-fancybox="images" href="' + talks[i].img + '"><img src="' + talks[i].img + '" class="talkimg"></span> \
+                <div class="ainfo">\
+                    <div class="ainfo-intro">\
+                        <div class="author">' + talks[i].author + '</div>·\
+                        <div class="time">' + talks[i].time + '</div>\
+                    </div>\
+                </div>\
+                <div class="talkcontent">' + talks[i].text + '\
+                </div\>\
+            ';
+            } else {
+                talkT.innerHTML += '\
+            <div class="talk" v-for="t in talks"> \
+                <div class="ainfo">\
+                    <div class="ainfo-intro">\
+                        <div class="author">' + talks[i].author + '</div>·\
+                        <div class="time">' + talks[i].time + '</div>\
+                    </div>\
+                </div>\
+                <div class="talkcontent">' + talks[i].text + '\
+                </div\>\
+            ';
+            }
+        }
+    }
+    //-------------------------------说说功能👆--------------------------------------
+</script>
+
+<!---->
+<script>
+    function replaceAvatar() {
+        twikoo_avatar = $(".tk-avatar-img");
+        for (var i = 0; i < twikoo_avatar.length; i++) {
+            var asrc = twikoo_avatar.eq(i).attr('src');
+            if (asrc.search('cn.gravatar.com') != -1) {
+                twikoo_avatar.eq(i).attr('src', 'https://gao-zhong-he.github.io//media/images/comavatar.png');
+            }
+        }
+    }
+
+    function showWechat() {
+        var wechat = '';
+        alert("博主微信号：" + wechat);
+        return false;
+    }
+</script>
+
+<script>
+    /**
+     * https://github.com/tangkaichuan/gridea-search
+     */
+    // 检查缓存是否最新
+    function checkCache() {
+        var caches_postsnum = localStorage.getItem("postsnum");
+        var pt = document.getElementById("side-posttitle").innerHTML;
+        pt = pt.replace(/\s+/g, '').replace(/<script>.*?<\/script>/gi, "")
+        var ptlen = pt.length;
+        var ptlen_storage = localStorage.getItem("poststitlelen");
+        if (caches_postsnum != postsnum || ptlen != ptlen_storage) {
+            console.log("更新缓存");
+            return false
+        }
+        return true;
+    }
+
+    (function () {
+        var CACHES = checkCache()
+        if (!CACHES) {
+            var NOW = Date.now()
+            var API_CONTENT = '../api-content/index.html' + '?_=' + NOW
+            preload(API_CONTENT);
+            getContents(show_getContentresult);
+        }
+
+        function show_getContentresult(data) {
+            console.log("获取成功");
+            var postslen = data["posts"].length;
+            localStorage.setItem('postsnum', postslen);
+            var poststitlelen = 0;
+            var pt = document.getElementById("side-posttitle").innerHTML;
+            pt = pt.replace(/\s+/g, '').replace(/<script>.*?<\/script>/gi, "");
+            localStorage.setItem('poststitlelen', pt.length);
+        }
+
+
+
+        // preload
+        function preload(url) {
+            var preloadLink = document.createElement('link')
+            preloadLink.href = url
+            preloadLink.rel = 'preload'
+            preloadLink.as = 'fetch'
+            preloadLink.crossOrigin = 'anonymous'
+            document.head.appendChild(preloadLink)
+        }
+
+        // 异步 GET 请求
+        function get(obj) {
+            var xhr = new XMLHttpRequest()
+            xhr.open('get', obj.url, true)
+            xhr.send(null)
+            xhr.onreadystatechange = function () {
+                // 异步请求：响应状态为4，数据加载完毕
+                if (xhr.readyState === 4) {
+                    if (xhr.status === 200) {
+                        obj.success(xhr.responseText)
+                    } else {
+                        obj.error(xhr.status)
+                    }
+                }
+            }
+        }
+
+        // 获取博客全文 api
+        function getContents(callback) {
+            if (CACHES) {
+                callback(CACHES.contents)
+            } else {
+                get({
+                    url: API_CONTENT,
+                    success: function (data) {
+                        callback(JSON.parse(data));
+                        localStorage.setItem('ContentsCache', data);
+                        getStorageContent();
+                    }
+                })
+            }
+        }
+    })()
+    //------------------------核心功能--pjax全局渲染👇-------------------
+    let talkinit = false;
+    $(document).pjax('a[data-pjax]', '#main', {
+        fragment: '#main',
+        timeout: 8000
+    }).on('pjax:complete', function () {
+        //代码块高亮渲染
+        document.querySelectorAll('pre code').forEach((block) => {
+            hljs.highlightBlock(block);
+        });
+        //文章热度
+        if(postnumChoice){
+            getHotnum();
+        }
+        //文章索引
+        toginit();
+        //清空搜索栏
+        if (searchChoice) {
+            searchInit();
+            searchInput.value = "";
+        }
+        var pl = window.location.pathname;
+        //说说更新
+        if (pl.search("talk") != -1 && !talkinit) {
+            add();
+            talkinit = true;
+        } else if (pl.search("talk") != -1) {
+            show();
+        }
+        if (pl.search("post") != -1) {
+            if (shareChoice)
+                shareInit();
+            if (donateChoice)
+                donateInit();
+            if ("valine" == "default"&&!commentsHide) {
+                $("#comment").hide()
+                commentsHide = true
+            }
+            lazyload();
+            codeinit();
+            if ("valine" == "twikoo") {
+                //twikoo头像更换
+                setTimeout(replaceAvatar, 3000);
+                setTimeout(replaceAvatar, 8000); //部分博主站点速度加载过慢，再添加一个延迟
+            }
+        }
+        if (btstate == true)
+            dropdown();
+    }).on('pjax:start', function () {
+        $(".pjaxloading").fadeIn(50);
+    }).on('pjax:end', function () {
+        $(".pjaxloading").fadeOut(50);
+    });
+    //------------------------核心功能--pjax全局渲染👆-------------------
+
+    //-------------------------------------------------搜索
+    // 获取搜索框、搜索按钮、清空搜索、结果输出对应的元素
+    if (searchChoice) {
+        var searchInput = document.querySelector('.search-input');
+        var searchResults = document.querySelector('.search-results');
+    }
+    // 申明保存文章的标题、链接、内容的数组变量
+    var searchValue = '',
+        arrItems = [],
+        arrLinks = [],
+        arrTitles = [],
+        arrContents = [],
+        arrResults = [],
+        indexItem = [],
+        itemLength = 0;
+    var tmpDiv = document.createElement('div');
+    tmpDiv.className = 'result-item';
+
+
+    function getStorageContent() {
+        var data = localStorage.getItem('ContentsCache');
+        data = JSON.parse(data);
+        posts = data["posts"];
+        for (var i = 0; i < posts.length; i++) {
+            arrLinks[i] = posts[i].link;
+            arrTitles[i] = posts[i].title;
+            arrContents[i] = posts[i].content;
+            itemLength++;
+        }
+    }
+    if (checkCache())
+        getStorageContent();
+    // 输入框内容变化后就开始匹配，可以不用点按钮
+    // 经测试，onkeydown, onchange 等方法效果不太理想，
+    // 存在输入延迟等问题，最后发现触发 input 事件最理想，
+    // 并且可以处理中文输入法拼写的变化
+    searchInput.oninput = function () {
+        setTimeout(searchConfirm, 0);
+    }
+    searchInput.onfocus = function () {
+        searchResults.style.display = 'block';
+    }
+
+    function searchConfirm() {
+        if (searchInput.value == '') {
+            searchResults.style.display = 'none';
+        } else if (searchInput.value.search(/^\s+$/) >= 0) {
+            // 检测输入值全是空白的情况
+            searchInit();
+            var itemDiv = tmpDiv.cloneNode(true);
+            itemDiv.innerText = '请输入有效内容...';
+            searchResults.appendChild(itemDiv);
+        } else {
+            // 合法输入值的情况
+            searchInit();
+            searchValue = searchInput.value;
+            // 在标题、内容中查找
+            searchMatching(arrTitles, arrContents, searchValue);
+        }
+    }
+
+    // 每次搜索完成后的初始化
+    function searchInit() {
+        arrResults = [];
+        indexItem = [];
+        searchResults.innerHTML = '';
+        searchResults.style.display = 'block';
+    }
+
+    function searchMatching(arr1, arr2, input) {
+        // 忽略输入大小写
+        input = new RegExp(input, 'i');
+        var step = 10;
+        // 在所有文章标题、内容中匹配查询值
+        for (i = 0; i < itemLength; i++) {
+            var indexContent = arr2[i].search(input);
+            //标题匹配
+            if (arr1[i].search(input) != -1) {
+                indexItem.push(i); // 保存匹配值的索引
+                if (indexContent != -1) {
+                    startindex = (indexContent - step) >= 0 ? (indexContent - step) : 0;
+                    var searchcontent = arr2[i].slice(indexContent - step, indexContent + 5)
+                    arrResults.push("....." + searchcontent + ".....");
+                } else
+                    arrResults.push("");
+            }
+            //内容匹配
+            else if (indexContent != -1) {
+                indexItem.push(i); // 保存匹配值的索引
+
+                startindex = (indexContent - step) >= 0 ? (indexContent - step) : 0;
+                var searchcontent = arr2[i].slice(indexContent - step, indexContent + 5)
+                arrResults.push("....." + searchcontent + ".....");
+            }
+        }
+
+        // 输出总共匹配到的数目
+        var totalDiv = tmpDiv.cloneNode(true);
+        totalDiv.innerHTML = '<b>总匹配：' + indexItem.length + ' 项<hr></b>';
+        searchResults.appendChild(totalDiv);
+
+        // 未匹配到内容的情况
+        if (indexItem.length == 0) {
+            var itemDiv = tmpDiv.cloneNode(true);
+            itemDiv.innerText = '未匹配到内容...';
+            searchResults.appendChild(itemDiv);
+        }
+
+        // 将所有匹配内容进行组合
+        for (i = 0; i < arrResults.length; i++) {
+            var itemDiv = tmpDiv.cloneNode(true);
+            itemDiv.innerHTML = '<a data-pjax class="searchresults" href="' + arrLinks[indexItem[i]] + '"><b>[' +
+                arrTitles[indexItem[i]] +
+                ']</b><p>' + arrResults[i] + '</p></a><hr />';
+            searchResults.appendChild(itemDiv);
+        }
+    }
+</script>
+
+
+
+<!--------------------- 菜单栏图标加载功能👇 ----------------------->
+<script>
+var menulist = $(".menuicon");
+var menulength = menulist.length;
+for (var i = 0; i < menulength; i++) {
+    var altname = menulist.eq(i).attr("alt");
+    var iconurl = icondict[altname];
+    if (iconurl == undefined || iconurl == '')
+        continue;
+    if (iconurl == 'Home') {
+        menulist.eq(i).attr("src", "https://gao-zhong-he.github.io//media/images/Home.png");
+menulist.eq(i).show();
+} else if (iconurl == 'Archive') {
+menulist.eq(i).attr("src", "https://gao-zhong-he.github.io//media/images/Archive.png");
+menulist.eq(i).show();
+} else if (iconurl == 'Tag') {
+menulist.eq(i).attr("src", "https://gao-zhong-he.github.io//media/images/Tag.png");
+menulist.eq(i).show();
+} else if (iconurl == 'About') {
+menulist.eq(i).attr("src", "https://gao-zhong-he.github.io//media/images/About.png");
+menulist.eq(i).show();
+} else if (iconurl == 'Talk') {
+menulist.eq(i).attr("src", "https://gao-zhong-he.github.io//media/images/Talk.png");
+menulist.eq(i).show();
+} else if (iconurl == 'Friends') {
+menulist.eq(i).attr("src", "https://gao-zhong-he.github.io//media/images/Friends.png");
+menulist.eq(i).show();
+} else if (iconurl == 'Fly') {
+menulist.eq(i).attr("src", "https://gao-zhong-he.github.io//media/images/wind.png");
+menulist.eq(i).show();
+} else {
+menulist.eq(i).attr("src", iconurl);
+menulist.eq(i).show();
+}
+}
+</script>
+<!--------------------- 菜单栏图标加载功能👆 ----------------------->
+
+<script>
+    //--------------------bber-onetalk加载👇--------------------------------
+    function bberonetalkLoad(){
+        bberjsonurl = '';
+        if ( $("#bber-talk").length > 0 ) {
+        jsonUrl = bberjsonurl
+        $.getJSON(jsonUrl+"?t="+Date.parse( new Date()),function(res){
+        var bberHtml = ''
+        $.each(res.data, function(i, item){
+            d = new Date(item.date)
+            date = d.getFullYear()+'/'+(d.getMonth()+1)+'/'+d.getDate() +' '+d.getHours()+':'+d.getMinutes()+':'+d.getSeconds()
+            dataTime = '<span class="datatime">'+date+'</span>'
+            bberHtml += '<li class="item item-'+(i+1)+'">'+dataTime+'： <a data-pjax href="https://gao-zhong-he.github.io//bber">'+item.content+'</a></li>'
+        });
+        $('#bber-talk').append('<span class="index-talk-icon"><svg viewBox="0 0 1024 1024" width="21" height="21"><path d="M184.32 891.667692c-12.603077 0-25.206154-2.363077-37.809231-7.876923-37.021538-14.966154-59.864615-49.624615-59.864615-89.009231v-275.692307c0-212.676923 173.292308-385.969231 385.969231-385.969231h78.76923c212.676923 0 385.969231 173.292308 385.969231 385.969231 0 169.353846-137.846154 307.2-307.2 307.2H289.083077l-37.021539 37.021538c-18.904615 18.116923-43.323077 28.356923-67.741538 28.356923zM472.615385 195.347692c-178.018462 0-322.953846 144.935385-322.953847 322.953846v275.692308c0 21.267692 15.753846 29.144615 20.48 31.507692 4.726154 2.363077 22.055385 7.876923 37.021539-7.08923l46.473846-46.473846c6.301538-6.301538 14.178462-9.452308 22.055385-9.452308h354.461538c134.695385 0 244.184615-109.489231 244.184616-244.184616 0-178.018462-144.935385-322.953846-322.953847-322.953846H472.615385z"></path><path d="M321.378462 512m-59.076924 0a59.076923 59.076923 0 1 0 118.153847 0 59.076923 59.076923 0 1 0-118.153847 0Z"></path><path d="M518.301538 512m-59.076923 0a59.076923 59.076923 0 1 0 118.153847 0 59.076923 59.076923 0 1 0-118.153847 0Z"></path><path d="M715.224615 512m-59.076923 0a59.076923 59.076923 0 1 0 118.153846 0 59.076923 59.076923 0 1 0-118.153846 0Z"></path></svg></span><ul class="talk-list">'+bberHtml+'</ul>')
+        //Lately({ 'target': '#bber-talk .datatime' });
+        });
+        function Roll (){
+        var list_li = $('.talk-list li'),cur_li = list_li.first(),last_li = list_li.last();
+        last_li.after(cur_li);
+        };
+        setInterval(Roll,3000);
+    }
+    }
+  //--------------------bber-onetalk加载👆--------------------------------
+</script>
+
+<script>
+    var ClicksideState = 1
+    var cur_readingmode = false
+    function readingmode(){
+        if (!cur_readingmode){
+            if(menupos == 'left'){
+                if(ClicksideState==1)
+                menu_openclose1()
+            }
+            $("#tab1").fadeOut(50)
+            $("#bg").fadeOut(50)
+            $(".navbar").fadeOut(50)
+            $(".markdownIt-TOC li a").css("color","black")
+            cur_readingmode = true
+        }else{
+            if(menupos == 'left'){
+                if(ClicksideState==0)
+                    menu_openclose1()
+            }
+            $("#tab1").fadeIn(50)
+            $("#bg").fadeIn(50)
+            $(".navbar").fadeIn(50)
+            $(".markdownIt-TOC li a").css("color","antiquewhite")
+            cur_readingmode = false  
+        }
+    }
+</script>
+
+
+<!----夜间模式👇-->
+<script>
+    var moonlightState = false
+    function moonlight(){
+        if(!moonlightState){
+            $("#bg").fadeOut(200)
+            $('body').css("background","rgba(0,0,0,0.8)")
+            $(".markdownIt-TOC li a").css("color","white")
+            $(".text p, .text ul").css("color","white")
+            $("#articlecontent").css("color","white")
+            $(".post-copyright").css("background","rgba(10,10,10,0.5)")
+            $('blockquote').css("background","rgba(10,10,10,0.6)")
+            $("#articlecontent").css("background","rgba(10,10,10,0.5)")
+            moonlightState = true
+            $(".moon").attr("src","https://gao-zhong-he.github.io//media/images/sun.png")
+        }else{
+            $("#bg").show()
+            $(".markdownIt-TOC li a").css("color","antiquewhite")
+            $(".text p, .text ul").css("color","rgba(0, 0, 0, 0.7)")
+            $("#articlecontent").css("color","black")
+            $(".post-copyright").css("background","#f9f9f9")
+            $('blockquote').css("background","#eff8f0")
+            $("#articlecontent").css("background","white")
+            $(".moon").attr("src","https://gao-zhong-he.github.io//media/images/moon.png")
+            $('body').css("background","white")
+            moonlightState = false
+        }
+    }
+</script>
+<!----夜间模式👆--></div>
+            <!--------------- pc端菜单栏👆 ---------------->
+
+            <!-- ----------------左侧菜单栏html 👇-------------------------------------->
+            
+            <!--------------- 顶部菜单栏html👇--------->
+            <div>
+                <div class="col-lg-3"></div>
+                <!-- main标签，pjax渲染时加载以下内容👇 -->
+                <div id="main" class="col-xs-12 col-sm-12 col-md-12  col-lg-6 posttop" style="padding:0;">
+                    <div class="readingmode" onclick="readingmode()">阅</div>
+                    <link rel="stylesheet" href="https://gao-zhong-he.github.io//media/css/font-awesome.css">
+
+<body>
+    <div class="allcontent" id="postdetail">
+        <div class="postshow postpadding" style="padding-bottom: 0;">
+            
+            <div class="postdetailimg">
+                <img src="https://gao-zhong-he.github.io//post-images/zai-zhong-xue-wei-ti-xi-xue-wei-yong-de-mao-dun-zhong-ru-jia-chang-shi-yu-xi-fang-rong-he-_hellmutwilhelm-zhu.jpg" class="postimage" style="cursor:auto">
+            </div>
+            <div class="postinfo-detail">
+                <div class="postdate"><i class="fa fa-calendar"></i>2023-10-31</div>
+                <div class="poststatus postdate"><i class="fa fa-clock-o"></i> 11 min read</div>
+                <div class="posttag">
+                    
+                    <a data-pjax href="https://gao-zhong-he.github.io/tag/gBXpAC3Qz/" class="postlink">
+                        <i class="fa fa-tag"></i> 刘传莹
+                    </a>
+                    
+                    <a data-pjax href="https://gao-zhong-he.github.io/tag/7frLxBiS95/" class="postlink">
+                        <i class="fa fa-tag"></i> 汉学
+                    </a>
+                    
+                    <a data-pjax href="https://gao-zhong-he.github.io/tag/3SMCc0ww-G/" class="postlink">
+                        <i class="fa fa-tag"></i> Hellmut Wilhelm
+                    </a>
+                    
+                    <a data-pjax href="https://gao-zhong-he.github.io/tag/9l9LY8Yjo/" class="postlink">
+                        <i class="fa fa-tag"></i> 曾国藩
+                    </a>
+                    
+                    <a data-pjax href="https://gao-zhong-he.github.io/tag/HVEjWeMlV3/" class="postlink">
+                        <i class="fa fa-tag"></i> 魏德明
+                    </a>
+                    
+                </div>
+            </div>
+            
+        <div id="articlecontent">
+            <div id="texttitle" style="text-align: center">
+                <h2 id="ptitle">曾国藩和刘传莹_Hellmut Wilhelm(魏德明)著</h2>
+                <!-- id 将作为查询条件 -->
+                <div id="pl" style="display:none">https://gao-zhong-he.github.io/post/ceng-guo-fan-he-liu-chuan-ying-_hellmut-wilhelmwei-de-ming-zhu/</div>
+                <div id="rootaddr" style="display:none">https://gao-zhong-he.github.io/</div>
+                
+                    
+                    <span id="hotnum">
+                        <h4><i class="fa fa-eye" aria-hidden="true" style="color: #FF8C00;"></i>&nbsp;&nbsp;热度</i>: <i
+                                class="hotnum">loading...</i></h4>
+                    </span>
+                    
+                
+            </div>
+            <div class="text ">
+                <p align=center>作者简介</p>
+&emsp;&emsp;卫德明（Hellmut Wilhelm）是德国汉学家卫礼贤（Richard Wilhelm）之子，出生于中国青岛，后在北京大学教德语，一直主持北京的德中学会工作。 1948 年赴美国，任华盛顿州立大学东方学院教授，曾任北京大学教授。著有《中国思想史和社会史》、《中国的社会和国家：一个帝国的历史》等。由于卫德明曾协助其父卫礼贤翻译《易》经的工作，因此，卫德明还着有《易》经译解，后被译成英文本，并以讲授《易》学闻名于世。其对于西欧的《易》学研究的影响保持至今。译者新浪名高中和，百度名all4you3，QQ472351407。欢迎探讨。已经翻译《Tseng Kuo-fan in Peking曾国藩在北京 1840-1852：他的经世和改革思想_Han-Yin Chen Shen著》。
+<p align=center>摘要</p>
+&emsp;&emsp;我们可以理想化地认为曾国藩的求学、考试生涯都被新理学的程朱学派整个占据，在当时程朱学派也被称为宋学。在北京生活的早期，曾国藩的朋友和导师也都是来自这个学派。然而，在后期曾国藩对汉学表现出极大的宽容，甚至对清初的汉学大师表现出非常高涨的热情。这个问题油然而生：曾国藩是在谁的影响下改变了自己的学术思想方向？在这个转折中我们应该提及的名字是刘传莹，尽管曾国藩对刘传莹的影响似乎大于刘传莹对曾国藩的影响。另外值得一提的是聚集在张穆身边的圈子中有好几个学者都是曾国藩的好友。可能在他们帮助下曾国藩提升了对汉学的兴趣，并了解了这一派内部的发展状况。张穆是顾炎武著名的传记者。
+<p align=center>正文</p>
+&emsp;&emsp;萧一山在他写的《曾国藩传》中强调了曾国藩和刘传莹关系的重要性。萧一山认为他们是在崇高道德范围内努力修行的一个光辉典范，这是一个相互促进的辩证的过程。萧一山认为曾国藩思想形成的关键时期是1846-1848年，而这恰好是在刘传莹离开北京之前。不幸的是我们非常缺乏刘传莹的资料，仅仅从曾国藩自己、曾国藩亲近的朋友和一些可能受到刘传莹影响的人那里得到片言只语。刘传莹除了汇编一部朱熹引用孟子的语录集《孟子要略》以外，没有留下任何作品。这部作品很可能受曾国藩的启发而作，而且被曾国藩编辑并且收录进自己的文集。因此，我们只能间接地了解到刘传莹的实际建树，以及他对曾国藩影响的程度，这种影响是萧一山认为刘传莹所具有的。
+&emsp;&emsp;我们只能零星收集刘传莹的传记材料，从曾国藩所写的刘传莹的墓志铭，传记文章（汉阳刘君家传），曾国藩写的对孙鼎臣《刍论》的序言；从梅曾亮为刘传莹写的墓志铭和方宗诚、李元度写的传记速写中。这些资料表明他出生于汉阳的一个贫苦家庭，在道光19年（1839）中举，任国子监学正。然后辞职并返回故乡，在他31岁时去逝，那时是道光28年（1848）。
+&emsp;&emsp;李元度把他和姚雪塽、潘谘相提并论，这两个人都是宋学的著名学者。方宗诚也主张将刘传莹归入宋学派，并且将他同张履祥、陆陇其这两位宋学的大学者划为一类。梅曾亮有将他同宋学联系在一起的倾向。目前关于李元度对宋学的偏爱、方宗诚返回到桐城派的传统、梅曾亮的派性这三方面都已经被大家普遍认可。尽管这三个人的评价有可能被他们对信仰的忠诚所蒙蔽，但是梅曾亮的某些重要的描述已经将刘传莹从通常的宋学派中区别开来。
+&emsp;&emsp;他（刘传莹）主张没有经过深思熟虑就不能发言。他曾经强调：“束缚世人的唯有名利二字。如果一个人对诗歌和文学有足够深入的钻研，那么他（几乎）可以超然于外物，达到内心的理想境界，从而产生自我满足。但是这还不足以操持一个人的品德。义理可以使人超脱万千纠葛，所以欲念不能导致我堕落。一位英勇的学者植根在这里，心无歉疚。”他对此矢志不渝。
+&emsp;&emsp;尽管大家公认刘传莹倾向于桐城派和宋学，但是他激进地坚持人格尊严和独立的行为又揭示了其它思想的影响。在他的众多传记者中曾国藩是唯一忠诚地清楚地描述的人，他在《孙芝房侍讲刍论序》中写道：
+&emsp;&emsp;【往者汉阳刘传莹，实究心汉学者之说，而疾其单辞碎义。间尝语余：“学以反求诸心而已，泛博胡为？至有事于身与家与国，则当一一详核焉而求其是。考诸室而市可行，验诸独而众可从。”又曰：“礼非考据不明，学非心得不成。”国藩则大韪之，以为知言者徒也。】
+&emsp;&emsp;曾国藩在刘传莹的传记中写道：
+&emsp;&emsp;【盖椒云之学之自得于中者，有不可襮诸文字者矣。其致功之迹，国藩实亲见之而亲讨之，称述以诏其诸子，吾之职也。……自乾隆中叶以来，世有所谓汉学云者。起自一二博闻之士，稽核名物，颇拾先贤之遗而补其阙。久之，风气日敝，学者渐以非毁宋儒为能，至取孔孟书中“心性仁义”之字，一切变更旧训，以与朱子相攻难。附和者既不一察，而矫之者恶其恣睢。因并蔑其稽核之长，而授人以诟病之柄。皆有识者所深悯也。椒云初从事于考据，即已洞知二者之弊。既更忧患之余，尤自敛抑，退然若无以辨于学术也者。默识而已矣。于是以道光二十八年二月，弃其所官之国子监学正，决然归去，以从政于门内。积其谨以严父母之事，以达于凡事无所不严；积其诚以推及父母之所爱，若所不爱，无不感悦。其又不合，则考之《礼经》，核之当世之《会典》，以权度乎吾心自然之则。必三善焉而后已。……盖用汉学家之能，综核于伦常日用之地，以求一得当(dāng4)于朱子。后之览者可以谓之笃志之君子耶？】
+&emsp;&emsp;曾国藩在他的墓志铭中写道：
+&emsp;&emsp;【（刘）君之为学，其初熟于德清胡渭、太原阎若璩二家之书，笃嗜若渴，治之三反。既与当世多闻长者游，益得尽窥国朝六七巨儒之绪。所谓方舆、六书、九数之学，及古号能文诗者之法，皆已规得要领。……君自伤年少羸弱，又所业繁杂，无当于身心，发愤叹曰：“凡吾之所为学者，何为也哉？舍孝弟取与之不讲，而旁骛琐琐，不以慎乎！”于是痛革故常，取濂洛以下切己之说，以意时其离合而反复之。……始君之归，尝语国藩：“没世之名不足较，君子之学，务本焉而已。吾与子敝精于雠校，费日力于文辞，以中材而谋兼人之业，徼幸于身后不知谁何者之誉。自今以往，可一切罢弃，各敦内行。没齿无闻，而誓不复悔。”国藩敬诺。】
+&emsp;&emsp;这些摘要提示了两个方面。一、曾国藩与刘传莹关系密切，他们是朋友。他们看起来经常讨论过一些观点。二、最初刘传莹是清初汉学大师的坚定追随者，他对汉学毫不怀疑，被理想主义所蒙蔽而特别强调训诂方面的研究。但是当他和曾国藩交往之后，他深深地被曾国藩影响了，思想从最初的位置发生了偏移。他渐渐怀疑考据的意义，而越来越转向桐城派的精神世界，甚至也接受更多的宋学。尽管曾国藩强调刘传莹偏重唯心地分析，而不是注重实际的经世之学，但是从他的描述中也可见刘传莹的转变是明显的。这也在梅曾亮、方宗臣、李元度的记述中得到印证。刘传莹戏剧性的辞官是这次转变的高潮，他将家庭责任凌驾于社会责任之上。但是从他反叛的诚挚和坚决可以发现他的观念的形成过程。
+&emsp;&emsp;我们想了解曾国藩受刘传莹影响的程度并不容易。虽然我推测萧一山的描述是基于一个先入为主的观念：这里存在一个相互影响的辩证过程，但是这个阶段实际上也是曾国藩形成思想的关键时期，他的确也从他们的相互讨论中吸收了许多观念。因为在他的狂热的好友的敦促下，曾国藩至少在一定程度上相信汉学。他改变了对汉学，尤其是训诂的态度，对清代初期的汉学大师更加尊重。这个转变表现在曾国藩在退休后致力于语言文字学上，也表现在随后曾国藩非常重视地理学和经济学上。
+&emsp;&emsp;当我们调查曾国藩同汉学者接触所可能受到的个人影响时，发现不仅顾炎武的个性深深影响了他，而且张穆的朋友圈子也对他产生了影响。张穆精通汉学流派中的语言学，也是政治学的研究者，更是著名的地理学家。他编撰了顾炎武的标准编年体传记，是顾炎武纪念馆的奠基者之一。纪念馆座落在北京城南，紧邻报国寺，不久之后他自己也被纪念在此处。这些事实表明张穆崇拜顾炎武。曾国藩和张穆直接见面的证据很少，但是张穆圈子中有两个人也明确属于曾国藩的朋友圈子。
+&emsp;&emsp;一位是何绍基，字子贞。他本身就是顾炎武的一位热忱的崇拜者，在1843年积极推进顾炎武纪念馆的建造。曾国藩早在1842年的一封家信中就已经提及了他，说他们的共同爱好是书法。在同一年的另一封家信中他表扬了何子贞的五点：“一曰《仪礼》精，二曰《汉书》熟，三曰《说文》精，四曰各体诗好，五曰字好。”在另一封信中他称赞何子贞富于智慧。因为何子贞对顾炎武的崇拜，所以我们很难想像他不会竭力将曾国藩拉入圈子。曾国藩的几封信证实：在以后的许多年中他们不仅保持了友谊，而且还相互交流学术观点。
+&emsp;&emsp;另一位是年轻的何秋涛，专精汉学。他和张穆共同的兴趣是地理学，尤其关注包括俄罗斯的北方地区。曾国藩写给他的几封信仍然保存完好。
+&emsp;&emsp;汉学的这个圈子还包括祁隽藻，他负责编辑张穆的文集。祁隽藻的父亲是祁韵士，一位著名的历史学家，撰写了几本关于蒙古和中亚的初级读物。苗夔是祁隽藻的一位学生，是顾炎武音韵学的继大承者，也紧接着成为曾国藩文学研究的激励者。曾国藩给苗夔写了一篇墓志铭，并被收录入自己的文集，这篇文章中证实了他们之间存在着相互的学术探讨。
+<p align=right>Hellmut Wilhelm</p>
+<p align=right>西雅图 华盛顿</p>
+
+            </div>
+            <hr style="width: 80%;">
+            
+            <div class="postfooter">
+                <ul class="post-copyright">
+                    <li><strong>文章作者：</strong>高中和</li>
+            <li><strong>原文链接：</strong>https://gao-zhong-he.github.io/post/ceng-guo-fan-he-liu-chuan-ying-_hellmut-wilhelmwei-de-ming-zhu/</li>
+            <li><strong>版权声明：</strong>本博客所有文章除特别声明外，均采用<i class="fa fa-fw fa-creative-commons"></i>BY-NC-SA
+                许可协议。转载请注明出处！</li>
+            </ul>
+        </div>
+        
+        <div id="otherpost">
+            
+            
+            <a data-pjax class="next-post-pc" href="https://gao-zhong-he.github.io/post/zhi-xin-meng-zi-lesslessniu-shan-zhi-mu-chang-mei-yi-greatergreater-jing-xiang-pian/"  style="color: black;">
+                <div id="npcontainer">
+                    
+                    <img src="https://gao-zhong-he.github.io//post-images/kong-fa-qi-shen-xing-fu-luan-qi-suo-wei-zhong-xing-zi-ying-dang-duan-zai-qian-yi-ju-gao-zhong-he-yuan-chuang.jpg" style="width: 100%;" class="opimg">
+                    
+                    <h4 class="optitle">制心+孟子《牛山之木尝美矣》镜像篇</h4>
+                </div>
+            </a>
+            <div class="next-post">
+                下一篇 <a  data-pjax href="https://gao-zhong-he.github.io/post/zhi-xin-meng-zi-lesslessniu-shan-zhi-mu-chang-mei-yi-greatergreater-jing-xiang-pian/">制心+孟子《牛山之木尝美矣》镜像篇</a>
+            </div>
+            
+        </div>
+    </div>
+    </div>
+    </div>
+    <!-- 弹窗 -->
+    <div id="myModal" class="modal">
+        <img class="modal-content" id="img01">
+    </div>
+</body>
+<script>
+    //文章阅读热度
+    var pl = $("#pl").html();
+    var rootaddr = $("#rootaddr").html();
+    pl = pl.replace(rootaddr, "");
+    $("#hotnum").attr('id', pl);
+</script>
+                    <div class="toc-container">
+                        
+                    </div>
+                    <div class="tog">
+                        <div class="toggleContainer">
+                            <div class="toggle">
+                                <i class="fas fa-angle-double-up"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <!---------------------------- 评论系统👇 ------------------------->
+                    <div id="comment" class="comment">
+                        <div class="commentcontainer">
+                            
+                                
+                                    
+        <div id="vcomments">
+        </div>
+        <script>
+            var valine = new Valine();
+            var curpath = window.location.pathname;
+            if (curpath[curpath.length - 1] != '/')
+                curpath += '/'
+            valine.init({
+                el: '#vcomments',
+                appId: 'W7v49biBmWVYRU4EZovxkvb4-gzGzoHsz',
+                appKey: 'yY2UJtyA3MlM2RHK1G1PgTFw',
+                avatar: 'retro',
+                pageSize: 10,
+                placeholder: '既然来了，何不畅所欲言呢？',
+                recordIP: true,
+                path: curpath //[重点] 记得添加path路径
+            });
+        </script>
+        <script type="text/javascript">
+            var jrsc = '既然来了，何不畅所欲言呢？';
+            jinrishici.load(function (result) {
+                // 自己的处理逻辑
+                jrsc = result.data.content + "\n「" + result.data.origin.title + "」" + result.data.origin
+                    .dynasty + " · " + result.data.origin.author;
+            });
+        </script>
+
+
+                                    <div class="clear"></div>
+                                
+                            
+                        </div>
+                    </div>
+                    <!---------------------------- 评论系统👆 ------------------------->
+
+                    <!-------------- 底部栏信息👇 -------------------->
+                    <div style="margin-top:5vh">
+                        
+                        <style>
+    .copyright {
+        font-size: 15px;
+        color: #d9d9d9;
+    }
+
+
+    @media screen and (min-width: 1200px) {
+        .foot {
+            width: 100%;
+            height: 130px;
+        }
+    }
+
+    @media screen and (max-width: 1200px) {
+        .foot {
+            display: none;
+        }
+    }
+</style>
+
+<body>
+    <div class="foot">
+        <div id="footinfo">Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a> | Theme: <a
+                href="https://github.com/850552586/gridea-theme-fog">Fog</a>
+            <div>
+                
+                <div id="sitegotimeDate">载入天数...</div>
+                <div id="sitegotimes">载入时分秒...</div>
+                <div id="cussitetime" style="display:none">08/2/2023</div>
+                
+            </div>
+            <div>
+                
+                <script async
+                    src="https://cdn.jsdelivr.net/gh/850552586/ericamcdn@0.1/js/busuanzi.pure.mini.js"></script>
+                <div id="vistornum" style="margin:0">
+                    <span id="busuanzi_container_site_uv">
+                        <i class="fa fa-heart" aria-hidden="true" style="color: red;"></i> 总访问量:<span
+                            id="busuanzi_value_site_pv"></span>&nbsp;&nbsp;|&nbsp;&nbsp;
+                        <i class="fa fa-user-o" aria-hidden="true"></i> 访问人数:<span id="busuanzi_value_site_uv"></span>
+                    </span>
+                </div>
+                
+            </div>
+            <div class="copyright" style="color:white;text-align: center;">
+            </div>
+        </div>
+
+
+
+    </div>
+</body>
+
+<script>
+    //----------------------站点运行时间
+    var now = new Date();
+
+    function createtime() {
+        var sitegotime = document.getElementById("cussitetime").innerHTML + " 00:00:00";
+        var grt = new Date(sitegotime); //此处修改你的建站时间或者网站上线时间 
+        now.setTime(now.getTime() + 250);
+        days = (now - grt) / 1000 / 60 / 60 / 24;
+        dnum = Math.floor(days);
+        hours = (now - grt) / 1000 / 60 / 60 - (24 * dnum);
+        hnum = Math.floor(hours);
+        if (String(hnum).length == 1) {
+            hnum = "0" + hnum;
+        }
+        minutes = (now - grt) / 1000 / 60 - (24 * 60 * dnum) - (60 * hnum);
+        mnum = Math.floor(minutes);
+        if (String(mnum).length == 1) {
+            mnum = "0" + mnum;
+        }
+        seconds = (now - grt) / 1000 - (24 * 60 * 60 * dnum) - (60 * 60 * hnum) - (60 * mnum);
+        snum = Math.round(seconds);
+        if (String(snum).length == 1) {
+            snum = "0" + snum;
+        }
+        document.getElementById("sitegotimeDate").innerHTML = "本站已安全运行 " + dnum + " 天 ";
+        document.getElementById("sitegotimes").innerHTML = hnum + " 小时 " + mnum + " 分 " + snum + " 秒";
+    }
+
+    let intervalId = setInterval("createtime()", 250);
+</script>
+
+                        
+                    </div>
+                    <!-------------- 底部栏信息👆 -------------------->
+                </div>
+                <!-- main标签，pjax渲染时加载以上内容👆 -->
+                <div class="col-md-2 col-lg-3">
+                </div>
+                <div id="bg">
+                </div>
+            </div>
+        <!--------------- 顶部菜单栏html👆--------->
+        
+        </div>
+        <!-- aplayer播放器加载👇 -->
+            
+        <!-- aplayer播放器加载👆 -->
+    </div>
+    <!-- 背景图加载方式👇 -->
+    <div id="bgchoice" style="display: none">link
+                </div>
+                
+                <div id="bgurl" style="display:none"></div>
+                
+    <!-- 背景图加载方式👆 -->
+</body>
+
+<script>
+    //初始化
+    //更换twikoo头像
+    setTimeout(replaceAvatar,1000);
+    setTimeout(replaceAvatar,2000);
+    setTimeout(replaceAvatar,8000);
+    // --------为每张图片添加懒加载（lazyload）标签-->懒加载功能 👇------------
+    lazyload();
+    //为文章内所有代码块添加代码复制功能 👇
+    codeinit();
+    // ------代码高亮显示功能-------------
+    hljs.initHighlightingOnLoad();
+    if (shareChoice)
+        shareInit();
+    if (donateChoice)
+        donateInit();
+</script>
+
+<!------------------ 加载live2d模型功能（看板娘）👇 ---------------->
+
+<!------------------ 加载live2d模型功能（看板娘）👆 ---------------->
+
+
+<!----------------------- 返回顶部按钮功能👇 --------------------->
+<script>
+    $(function () {
+        $('.toggleContainer').click(function () {
+            $('html,body').animate({
+                scrollTop: '0px'
+            }, 800);
+        });
+        $(window).scroll(function () {
+            var st = $(window).scrollTop();
+            if (st > 30) {
+                $(".toggleContainer").fadeIn(400);
+            } else {
+                $(".toggleContainer").fadeOut(100);
+            }
+        });
+    });
+</script>
+<!----------------------- 返回顶部按钮功能👆 --------------------->
+
+
+<!------------ 加载全局背景图功能👇（开始时没有写好，这功能有点鸡肋/(ㄒoㄒ)/~~） -->
+<script>
+    var bgchoice = "link"
+    var bg = $('#bg');
+    var bgurl = document.getElementById("bgurl").innerHTML;
+    if (bgchoice == 'default')
+    {
+        for (var i = 0; i < 3; i++)
+            bgurl = bgurl.replace("\\", "/");
+        bgurl = "https://gao-zhong-he.github.io//" + bgurl;
+    }
+    bg.css("background", "url('" + bgurl + "')");
+
+    window.onload = function () {
+        aplayerbtnInit();
+    }
+</script>
+<!------------ 加载全局背景图功能👆（开始时没有写好，这功能有点鸡肋/(ㄒoㄒ)/~~） -->
+
+
+
+
+
+<script>
+    //加载后的事件同步（阅读量、移动端评论等
+    window.onload = function () {
+    //代码块高亮渲染
+    document.querySelectorAll('pre code').forEach((block) => {
+            hljs.highlightBlock(block);
+    });
+        getHotnum();
+        var sharepc = $(".share").eq(0).html();
+        $(".share").eq(1).html(sharepc);   //插件只会寻找一个分享标签渲染，所以需要手动添加到移动端
+        aplayerbtnInit();
+        $(".hljs").css({
+            "padding": "20px"
+        })
+    }
+</script>
+
+<!-- <script src="https://gao-zhong-he.github.io//media/js/av-min.js"></script> -->
+<!-- <script src="https://cdn.jsdelivr.net/npm/leancloud-storage@3.13.0/dist/av-min.js"></script> -->
+<!-- <script src="https://cdn.jsdelivr.net/npm/leancloud-storage@4.6.1/dist/av-live-query-min.js"></script> -->
